@@ -21,34 +21,25 @@ int main(void)
     """
     在下方编写你的代码
     """
-    while(1)
-        {
-    P0_7=0;
-    delay_ms(500);
-    P0_7=1;
-    P0_6=0;
-    delay_ms(500);
-    P0_6=1;
-    P0_5=0;
-    delay_ms(500);
-    P0_5=1;
-    P0_4=0;
-    delay_ms(500);
-    P0_4=1;
-    P0_3=0;
-    delay_ms(500);
-    P0_3=1;
-    P0_2=0;
-    delay_ms(500);
-    P0_2=1;
-    P0_1=0;
-    delay_ms(500);
-    P0_1=1;
-     P0_0=0;
-    delay_ms(500);
-    P0_0=1;
-
-        }
+   	while(1)
+	{
+		P0=0xFE;
+		delay_ms(500);
+			P0=0xFD;
+		delay_ms(500);
+			P0=0xFB;
+		delay_ms(500);
+			P0=0xF7;
+		delay_ms(500);
+				P0=0xEF;
+		delay_ms(500);
+				P0=0xDF;
+		delay_ms(500);
+				P0=0xBF;
+		delay_ms(500);
+				P0=0x7F;
+		delay_ms(500);
+	}
 
 
     return 0;
